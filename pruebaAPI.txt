@@ -1,0 +1,28 @@
+Ejecutar el Servidor
+Ejecuta el servidor con Uvicorn:
+
+bash
+Copiar código
+uvicorn main:app --reload
+El servidor estará disponible en:
+http://127.0.0.1:8000
+
+6. Probar en Postman
+POST /items/:
+json
+Copiar código
+{
+    "name": "Sample Item",
+    "description": "This is a sample item"
+}
+GET /items/{item_id}:
+Reemplaza {item_id} con el ID de un ítem creado.
+PUT /items/{item_id}:
+json
+Copiar código
+{
+    "name": "Updated Item",
+    "description": "This item has been updated"
+}
+DELETE /items/{item_id}:
+Reemplaza {item_id} con el ID del ítem que deseas eliminar.
